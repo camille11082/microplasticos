@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Microplásticos no Ambiente Marinho - TCC</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #ffffff);
+      color: #023047;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    header {
+      background: linear-gradient(135deg, #219ebc, #023047);
+      color: #ffb703;
+      padding: 3rem 1rem;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      box-shadow: 0 5px 15px rgba(33, 158, 188, 0.5);
+      border-radius: 0 0 40px 40px;
+    }
+    header h1 {
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
+      text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3);
+    }
+    header p {
+      font-weight: 500;
+      font-size: 1.3rem;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.6;
+      color: #ffdd57;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.25);
+    }
+    .tabs {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    .nav-tabs {
+      border-bottom: 3px solid #ffb703;
+      justify-content: center;
+    }
+    .nav-tabs .nav-link {
+      color: #023047;
+      font-weight: 700;
+      font-size: 1.1rem;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      border-radius: 15px 15px 0 0;
+      margin: 0 0.2rem;
+      background-color: #caf0f8;
+      transition: background-color 0.3s ease;
+    }
+    .nav-tabs .nav-link.active,
+    .nav-tabs .nav-link:hover {
+      background-color: #ffb703;
+      color: #023047;
+      box-shadow: 0 2px 6px rgba(255, 183, 3, 0.7);
+    }
+    .tab-content {
+      background: #caf0f8;
+      border-radius: 0 20px 20px 20px;
+      padding: 2rem 2rem 3rem;
+      box-shadow: 4px 4px 15px rgba(2, 48, 71, 0.15);
+      color: #023047cc;
+      font-size: 1.15rem;
+      line-height: 1.75;
+      min-height: 400px;
+    }
+    h2 {
+      font-weight: 900;
+      margin-bottom: 1.5rem;
+      color: #023047;
+      text-shadow: 0 1px 3px rgba(255, 183, 3, 0.7);
+      border-bottom: 4px solid #ffb703;
+      padding-bottom: 0.5rem;
+    }
+    ul li {
+      margin-bottom: 0.9rem;
+      list-style-type: disc;
+      margin-left: 1.5rem;
+    }
+    a {
+      color: #ffb703;
+      font-weight: 600;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #fb8500;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Microplásticos no Ambiente Marinho</h1>
+    <p>Um estudo aprofundado sobre os impactos, causas e soluções para esse grave problema ambiental.</p>
+  </header>
+  <div class="tabs">
+    <ul class="nav nav-tabs" id="tabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="introducao-tab" data-bs-toggle="tab" data-bs-target="#introducao" type="button" role="tab" aria-controls="introducao" aria-selected="true">Introdução</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="oque-tab" data-bs-toggle="tab" data-bs-target="#oque" type="button" role="tab" aria-controls="oque" aria-selected="false">O que são</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="causas-tab" data-bs-toggle="tab" data-bs-target="#causas" type="button" role="tab" aria-controls="causas" aria-selected="false">Causas</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="impactos-tab" data-bs-toggle="tab" data-bs-target="#impactos" type="button" role="tab" aria-controls="impactos" aria-selected="false">Impactos</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="solucoes-tab" data-bs-toggle="tab" data-bs-target="#solucoes" type="button" role="tab" aria-controls="solucoes" aria-selected="false">Soluções</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="estatisticas-tab" data-bs-toggle="tab" data-bs-target="#estatisticas" type="button" role="tab" aria-controls="estatisticas" aria-selected="false">Estatísticas</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="curiosidades-tab" data-bs-toggle="tab" data-bs-target="#curiosidades" type="button" role="tab" aria-controls="curiosidades" aria-selected="false">Curiosidades</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="sobre-tab" data-bs-toggle="tab" data-bs-target="#sobre" type="button" role="tab" aria-controls="sobre" aria-selected="false">Sobre nós</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="referencias-tab" data-bs-toggle="tab" data-bs-target="#referencias" type="button" role="tab" aria-controls="referencias" aria-selected="false">Referências</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="video-tab" data-bs-toggle="tab" data-bs-target="#video" type="button" role="tab" aria-controls="video" aria-selected="false">Vídeo</button>
+      </li>
+    </ul>
+
+    <div class="tab-content" id="tab-content">
+      <section class="tab-pane fade show active" id="introducao" role="tabpanel" aria-labelledby="introducao-tab" tabindex="0">
+        <h2>Introdução</h2>
+        <p>A crescente preocupação ambiental em nível global tem direcionado atenção significativa à poluição por microplásticos, uma problemática emergente que representa uma ameaça expressiva à saúde dos ecossistemas e à qualidade de vida humana. Os microplásticos são partículas plásticas de dimensões inferiores a cinco milímetros que, devido à sua persistência e ampla distribuição no meio ambiente, vêm sendo detectados em diversos compartimentos naturais, como oceanos, rios, solos e até mesmo na atmosfera.</p>
+        <p>A origem desses fragmentos está relacionada tanto à fabricação direta de partículas plásticas em pequena escala para uso industrial e comercial, quanto à degradação de resíduos plásticos maiores, resultado do manejo inadequado e da elevada produção desses materiais na sociedade contemporânea.</p>
+        <p>Considerando o potencial impacto dos microplásticos na fauna, na flora e na saúde humana, é fundamental compreender seus mecanismos de geração, dispersão e os riscos associados, a fim de promover estratégias eficazes de prevenção e mitigação. Este trabalho tem por objetivo apresentar uma análise abrangente sobre os microplásticos, enfatizando suas causas, impactos ambientais e sociais, além das possíveis soluções para enfrentar este desafio ambiental de forma responsável e sustentável.</p>
+      </section>
+
+      <section class="tab-pane fade" id="oque" role="tabpanel" aria-labelledby="oque-tab" tabindex="0">
+        <h2>O que são Microplásticos</h2>
+        <p>Microplásticos são partículas plásticas com menos de cinco milímetros de diâmetro que resultam de dois processos principais: a fabricação direta com essa dimensão (microplásticos primários) e a fragmentação de plásticos maiores no ambiente (microplásticos secundários).</p>
+        <p>Essas partículas são formadas por polímeros sintéticos, como polietileno, polipropileno, poliestireno e nylon, e possuem elevada resistência à degradação, o que lhes confere uma persistência ambiental que pode durar décadas. Devido ao seu tamanho reduzido, os microplásticos são facilmente transportados por correntes de água e ar, alcançando até regiões remotas, como o fundo oceânico e calotas polares.</p>
+        <p>Estudos científicos identificaram a presença de microplásticos em diversos organismos, incluindo plâncton, moluscos, crustáceos, peixes, aves marinhas e até mesmo seres humanos, evidenciando sua ampla dispersão e incorporação na cadeia alimentar. Eles podem atuar como vetores de poluentes químicos, adsorvendo metais pesados, pesticidas e hidrocarbonetos, potencializando seus efeitos tóxicos.</p>
+        <p>A compreensão da natureza, origem e comportamento dos microplásticos é essencial para avaliar seus riscos ambientais e à saúde humana, assim como para propor estratégias de mitigação baseadas em evidências científicas.</p>
+      </section>
+      <section class="tab-pane fade" id="causas" role="tabpanel" aria-labelledby="causas-tab" tabindex="0">
+        <h2>Causas</h2>
+        <p>As causas da presença de microplásticos no meio ambiente estão intrinsecamente ligadas à ampla produção, consumo e descarte inadequado de materiais plásticos pela sociedade contemporânea. De modo geral, os microplásticos podem ser classificados em duas categorias principais quanto à sua origem: os microplásticos primários e os microplásticos secundários.</p>
+        <p>Os microplásticos primários correspondem às partículas plásticas produzidas intencionalmente em dimensões inferiores a 5 milímetros, utilizadas em diversos setores industriais e comerciais. Exemplos incluem microesferas presentes em cosméticos, produtos de higiene pessoal, detergentes, além de componentes industriais utilizados em processos de fabricação e abrasão.</p>
+        <p>Já os microplásticos secundários são derivados da fragmentação e degradação de resíduos plásticos maiores, que sofrem ação prolongada de agentes físicos, químicos e biológicos no ambiente. Essa degradação ocorre devido à exposição à radiação ultravioleta, à abrasão mecânica por ondas e vento, e à ação de microrganismos, resultando na fragmentação de embalagens, sacolas plásticas, garrafas, redes de pesca, pneus e outros produtos plásticos descartados de forma inadequada.</p>
+        <p>Além das fontes diretas, o uso intensivo de materiais sintéticos, como fibras têxteis presentes em roupas feitas de poliéster e nylon, contribui significativamente para a liberação de microfibras durante o processo de lavagem, que posteriormente são descartadas em corpos hídricos.</p>
+        <p>A insuficiência dos sistemas de coleta, tratamento e reciclagem de resíduos sólidos plásticos, associada ao descarte irregular e ao consumo excessivo de produtos descartáveis, intensifica a disseminação dos microplásticos nos ecossistemas terrestres e aquáticos, agravando a problemática ambiental.</p>
+        <p>Dessa forma, as causas dos microplásticos são multifatoriais, envolvendo aspectos industriais, comportamentais e estruturais, que demandam ações integradas para a mitigação de seus impactos.</p>
+      </section>
+
+      <section class="tab-pane fade" id="impactos" role="tabpanel" aria-labelledby="impactos-tab" tabindex="0">
+        <h2>Impactos dos Microplásticos</h2>
+        <p>Os microplásticos geram impactos significativos nos ecossistemas marinhos e terrestres, na biodiversidade e na saúde pública. No ambiente marinho, essas partículas são ingeridas por diversos organismos, desde o zooplâncton até grandes mamíferos marinhos, afetando sua fisiologia, comportamento alimentar e reprodutivo.</p>
+        <p>A ingestão de microplásticos pode causar obstrução intestinal, redução da sensação de saciedade, toxicidade química e mortalidade. Além disso, essas partículas atuam como sorventes de poluentes orgânicos persistentes (POPs), metais pesados e compostos hidrofóbicos, aumentando a toxicidade dos materiais ingeridos.</p>
+        <p>No plano ecológico, os microplásticos interferem na qualidade da água, no funcionamento dos ciclos biogeoquímicos e na dinâmica das redes tróficas. Eles também impactam negativamente atividades econômicas, como a pesca, o turismo e a aquicultura.</p>
+        <p>Em relação à saúde humana, estudos recentes identificaram microplásticos em tecidos humanos, água potável, sal de cozinha, alimentos e até no ar. Embora os efeitos a longo prazo ainda estejam sendo investigados, há preocupações quanto à toxicidade das substâncias associadas e à resposta inflamatória do organismo humano.</p>
+      </section>
+
+      <section class="tab-pane fade" id="solucoes" role="tabpanel" aria-labelledby="solucoes-tab" tabindex="0">
+        <h2>Soluções</h2>
+        <p>A complexidade e a abrangência da poluição por microplásticos exigem uma abordagem multidisciplinar e integrada, contemplando ações governamentais, industriais, científicas e educacionais. A adoção de medidas eficazes para reduzir a geração, dispersão e impactos dos microplásticos é fundamental para a preservação dos ecossistemas e a proteção da saúde pública. Entre as principais estratégias destacam-se:</p>
+        <ul>
+          <li><strong>Redução do uso de plásticos descartáveis:</strong> Incentivo à substituição por alternativas sustentáveis, como biopolímeros e reutilizáveis.</li>
+          <li><strong>Regulamentação da produção industrial:</strong> Proibição e restrição do uso de microplásticos primários com fiscalização rigorosa.</li>
+          <li><strong>Gestão eficiente de resíduos sólidos:</strong> Coleta seletiva, reciclagem e descarte adequado, especialmente em zonas costeiras.</li>
+          <li><strong>Inovação tecnológica:</strong> Desenvolvimento de filtros, sistemas de captura e sensores de monitoramento ambiental.</li>
+          <li><strong>Consumo consciente:</strong> Educação ambiental e campanhas públicas para redução de plásticos e descarte correto.</li>
+          <li><strong>Fomento à economia circular:</strong> Reutilização e reciclagem de materiais, promovendo ciclos produtivos sustentáveis.</li>
+          <li><strong>Políticas públicas e cooperação internacional:</strong> Acordos multilaterais e legislações integradas com base em evidências científicas.</li>
+        </ul>
+        <p>A implementação coordenada dessas soluções é imprescindível para enfrentar o problema dos microplásticos de forma sustentável e duradoura, contribuindo para a recuperação dos ecossistemas afetados e a minimização dos riscos à saúde humana.</p>
+      </section>
+      <section class="tab-pane fade" id="estatisticas" role="tabpanel" aria-labelledby="estatisticas-tab" tabindex="0">
+        <h2>Estatísticas</h2>
+        <p>Estudos recentes apontam que cerca de 11 milhões de toneladas de plásticos entram nos oceanos todos os anos, sendo que uma fração significativa se transforma em microplásticos. Estima-se que existam entre 15 e 51 trilhões de partículas de microplásticos flutuando nos mares, segundo dados da ONU Meio Ambiente.</p>
+        <p>Um levantamento de 2022 publicado pela revista Science revelou que mais de 700 espécies marinhas já foram impactadas por ingestão ou contato com microplásticos. A cada ano, são produzidas mais de 400 milhões de toneladas de plástico no mundo, e apenas cerca de 9% são recicladas adequadamente.</p>
+        <p>Em amostras de água potável coletadas em diferentes países, microplásticos foram encontrados em 83% das amostras, demonstrando o alcance global dessa poluição.</p>
+      </section>
+
+      <section class="tab-pane fade" id="curiosidades" role="tabpanel" aria-labelledby="curiosidades-tab" tabindex="0">
+        <h2>Curiosidades</h2>
+        <ul>
+          <li>Microplásticos já foram encontrados em locais remotos como o Monte Everest e as regiões polares.</li>
+          <li>Uma camiseta de poliéster pode liberar até 1.900 microfibras por lavagem.</li>
+          <li>Pesquisadores encontraram microplásticos na placenta humana, levantando preocupações sobre sua penetração em tecidos biológicos sensíveis.</li>
+          <li>Alguns países, como os Estados Unidos e o Canadá, já proibiram o uso de microesferas plásticas em cosméticos.</li>
+        </ul>
+      </section>
+
+      <section class="tab-pane fade" id="sobre" role="tabpanel" aria-labelledby="sobre-tab" tabindex="0">
+        <h2>Sobre nós</h2>
+        <p>Somos quatro alunas do Colégio Visconde de Porto Seguro, integrantes do itinerário de Ciências, dedicadas à investigação e análise de questões ambientais contemporâneas de grande relevância científica e social. Optamos por desenvolver este projeto sobre microplásticos, considerando a crescente evidência de seus impactos adversos sobre os ecossistemas aquáticos e terrestres, bem como suas implicações para a saúde pública.</p>
+        <p>Durante a elaboração deste trabalho, conduzimos uma pesquisa detalhada com base em fontes científicas atuais e revisadas por pares, com o objetivo de compreender os processos de geração, dispersão e efeitos dos microplásticos, além de avaliar as estratégias existentes para sua mitigação.</p>
+        <p>Recebemos valiosa orientação e suporte dos professores do itinerário de Ciências, que nos auxiliaram na análise crítica e na obtenção de dados relevantes para fundamentar nossas conclusões. Reconhecemos que a disseminação do conhecimento científico é fundamental para a formulação de políticas públicas eficazes e para a promoção de práticas sustentáveis.</p>
+        <p>Assim, este projeto visa contribuir para a formação crítica e fundamentada da comunidade escolar, estimulando a adoção de medidas responsáveis que visem à preservação ambiental e à sustentabilidade a longo prazo.</p>
+      </section>
+
+      <section class="tab-pane fade" id="referencias" role="tabpanel" aria-labelledby="referencias-tab" tabindex="0">
+        <h2>Referências</h2>
+        <ul>
+          <li>GESAMP (2015). Sources, fate and effects of microplastics in the marine environment.</li>
+          <li>UNEP (2021). From Pollution to Solution: A global assessment of marine litter and plastic pollution.</li>
+          <li>Thompson et al. (2004). Lost at sea: where is all the plastic? Science, 304(5672), 838.</li>
+          <li>Jambeck et al. (2015). Plastic waste inputs from land into the ocean. Science, 347(6223), 768–771.</li>
+          <li>Science Advances, "Microplastics in freshwater and drinking water", 2020.</li>
+        </ul>
+      </section>
+
+      <section class="tab-pane fade" id="video" role="tabpanel" aria-labelledby="video-tab" tabindex="0">
+        <h2>Vídeo</h2>
+        <div class="ratio ratio-16x9">
+          <iframe src="https://www.youtube.com/embed/-UmOPQRpRIE" title="Microplásticos vídeo educativo" allowfullscreen></iframe>
+        </div>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
